@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 8 — Formularios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Cuestionario para estudiantes y docentes</h1>
+
+<form action="https://formspree.io/f/mreoedga" method="post">
+  <fieldset>
+    <legend>Datos Personales</legend>
+
+    <label for="edad">Edad: </label><br>
+    <input type="text" id="edad" name="edad" placeholder="Ingrese su edad" required><br><br>
+
+    <label for="apellidos">Curso: </label><br>
+    <input type="text" id="apellidos" name="curso" placeholder="Ingrese su curso" required><br><br>
+
+    <label>Rol: </label><br>
+    <input type="radio" id="estudiante" name="rol" value="Estudiante" required>
+    <label for="estudiante">Estudiante</label>
+
+    <input type="radio" id="docente" name="rol" value="Docente" required>
+    <label for="docente">Docente</label><br><br>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Preguntas</legend>
+
+    <p>1.Como se realiza actualmente la inscripcion de estudiantes en tu institucion</p>
+
+    <input type="radio" id="manual" name="1.Como se realiza actualmente la inscripcion de estudiantes en tu institucion" value="manual" required>
+    <label for="manual">Manual</label>
+
+    <input type="radio" id="digital" name="1.Como se realiza actualmente la inscripcion de estudiantes en tu institucion" value="digital" required>
+    <label for="digital">Digital</label>
+
+    <input type="radio" id="ambos" name="1.Como se realiza actualmente la inscripcion de estudiantes en tu institucion" value="ambos" required>
+    <label for="ambos">ambos</label>
+
+    <input type="radio" id="nose" name="1.Como se realiza actualmente la inscripcion de estudiantes en tu institucion" value="nose" required>
+    <label for="nose">nose</label><br><br>
+
+    <p>2.Que tan eficiente consideras el sistema actual de inscripcion</p>
+
+    <input type="radio" id="muy_eficiente" name="2.Que tan eficiente consideras el sistema actual de inscripcion" value="Muy eficiente" required>
+    <label for="muy_eficiente">Muy eficiente</label>
+
+    <input type="radio" id="eficiente" name="2.Que tan eficiente consideras el sistema actual de inscripcion" value="Eficiente" required>
+    <label for="eficiente">Eficiente</label>
+
+    <input type="radio" id="poco_eficiente" name="2.Que tan eficiente consideras el sistema actual de inscripcion" value="Poco eficiente" required>
+    <label for="poco_eficiente">Poco eficiente</label>
+
+    <input type="radio" id="deficiente" name="2.Que tan eficiente consideras el sistema actual de inscripcion" value="Deficiente" required>
+    <label for="deficiente">Deficiente</label><br>
+
+    <p>3.Has tenido problemas al inscribirte o inscribir a un estudiante</p>
+
+    <input type="radio" id="si" name="3.Has tenido problemas al inscribirte o inscribir a un estudiante" value="si" required>
+    <label for="si">SI</label>
+
+    <input type="radio" id="no" name="3.Has tenido problemas al inscribirte o inscribir a un estudiante" value="no" required>
+    <label for="no">NO</label><br>
+
+    <p>4.Te gustaria que la inscripcion se realiza mediante un sistema web con inicio de sesion</p>
+
+    <input type="radio" id="html" name="4.Te gustaria que la inscripcion se realiza mediante un sistema web con inicio de sesion" value="si" required>
+    <label for="si">SI</label>
+
+    <input type="radio" id="js" name="4.Te gustaria que la inscripcion se realiza mediante un sistema web con inicio de sesion" value="no" required>
+    <label for="no">NO</label><br>
+
+    <p>5.Que funciones deberia tener el sistema</p>
+
+    <input type="radio" id="html" name="5.Que funciones deberia tener el sistema" value="Ingreso de notas" required>
+    <label for="ingreso_notas">Ingreso de notas</label>
+
+    <input type="radio" id="js" name="5.Que funciones deberia tener el sistema" value="Registro de estudiantes" required>
+    <label for="registro_estudiantes">Registro de estudiantes</label>
+
+    <input type="radio" id="redes" name="5.Que funciones deberia tener el sistema" value="Consulta de notas" required>
+    <label for="consulta_notas">Consulta de notas</label>
+
+    <input type="radio" id="redes" name="5.Que funciones deberia tener el sistema" value="Inicio de sesion seguro" required>
+    <label for="inicio_sesion_seguro">Inicio de sesion seguro</label>
+
+    <input type="radio" id="otros" name="5.Que funciones deberia tener el sistema" value="otros" required>
+    <label for="otros">otros</label>
+
+    <p>6.Con que frecuencia has tenido problemas con el resto de notas</p>
+
+    <input type="radio" id="html" name="6.Con que frecuencia has tenido problemas con el resto de notas" value="Frecuentemente" required>
+    <label for="frecuentemente">Frecuentemente</label>
+
+    <input type="radio" id="js" name="6.Con que frecuencia has tenido problemas con el resto de notas" value="Ocacional" required>
+    <label for="ocacional">Ocacional</label>
+
+    <input type="radio" id="redes" name="6.Con que frecuencia has tenido problemas con el resto de notas" value="Nunca" required>
+    <label for="nunca">Nunca</label><br>
+
+    <p>7.Como prefieres consultar o registrar notas</p>
+    <input type="radio" id="html" name="7.Como prefieres consultar o registrar notas" value="Cuaderno" required>
+    <label for="cuaderno">Cuaderno</label>
+
+    <input type="radio" id="js" name="7.Como prefieres consultar o registrar notas" value="Sistema Digital" required>
+    <label for="sistema_digital">Sistema Digital</label>
+
+    <input type="radio" id="redes" name="7.Como prefieres consultar o registrar notas" value="Ambos" required>
+    <label for="ambos">Ambos</label><br>
+
+    <p>8.Has experimentado errores o demoras al registrar o ver notas</p>
+
+    <input type="radio" id="html" name="8.Has experimentado errores o demoras al registrar o ver notas" value="si" required>
+    <label for="si">Si</label>
+
+    <input type="radio" id="js" name="8.Has experimentado errores o demoras al registrar o ver notas" value="no" required>
+    <label for="no">No</label><br>
+
+    <p>9.Que dispositivo usarias para acceder al sistema</p>
+
+    <input type="radio" id="html" name="9.Que dispositivo usarias para acceder al sistema" value="computadora" required>
+    <label for="computadora">Computadora</label>
+
+    <input type="radio" id="js" name="9.Que dispositivo usarias para acceder al sistema" value="celular" required>
+    <label for="celular"> Celular</label>
+
+    <input type="radio" id="redes" name="9.Que dispositivo usarias para acceder al sistema" value="tablet" required>
+    <label for="tablet">Tablet</label>
+
+    <input type="radio" id="redes" name="9.Que dispositivo usarias para acceder al sistema" value="ninguno" required>
+    <label for="ninguno">Ninguno</label><br>
+
+    <p>10.Crees que un sistema con inicio de sesion mejoraria la gestion academica</p>
+
+    <input type="radio" id="html" name="10.Crees que un sistema con inicio de sesion mejoraria la gestion academica" value="si mucho" required>
+    <label for="si_mucho">Si, mucho</label>
+
+    <input type="radio" id="js" name="10.Crees que un sistema con inicio de sesion mejoraria la gestion academica" value="si un poco" required>
+    <label for="si_un_poco">Si, un poco</label>
+
+    <input type="radio" id="redes" name="10.Crees que un sistema con inicio de sesion mejoraria la gestion academica" value="no" required>
+    <label for="no">No</label><br>
+
+  </fieldset>
+<br>
+  <button type="submit">Enviar Inscripción</button>
+  <button type="reset">Limpiar Formulario</button>
+
+</form>
+
+</body>
+</html>

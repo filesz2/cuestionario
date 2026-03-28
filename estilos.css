@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(223, 249, 255);
+}
+h1 {
+    color:darkred;
+}
+p {
+    color:darkred;
+}
+li{
+    color:brown;
+}
+tr{
+    color: blue;
+
+}
+label{
+    color:rgb(156, 95, 15);
+    background-color:aliceblue;
+}
+fieldset{
+    background-color: aliceblue;
+}
+legend{
+    color:darkred;
+}
